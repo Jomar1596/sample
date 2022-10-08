@@ -31,6 +31,11 @@ class Students extends People {
         this.year = yearEnrolled;
         this.enroll = true;
     }
+
+    getAge(){
+        super.getAge();
+        return `${this.age} sa student` 
+    }
 }
 
 
@@ -43,4 +48,4 @@ class Students extends People {
 const student1 = new Students("Jomar", 26 , "Male", "2021")
 
 student1.enRolled("2022");
-console.log(student1);
+console.log(student1.getAge());
