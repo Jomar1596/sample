@@ -29,9 +29,9 @@ activities.forEach((activity) => {
 // activities.splice(1, 2)
 
 //remove the elements from the inner array of the multidimensional array by using the pop() method.
-activities.forEach((activity) => {
-    activity.pop()
-})
+// activities.forEach((activity) => {
+//     activity.pop()
+// })
 
 //Iterating over elements of the JavaScript multidimensional array using Loop
 for( let i = 0; i < activities.length; i++ ){
@@ -48,4 +48,9 @@ activities.forEach((activity) => {
     })
 })
 
-// console.log(activities)
+//Sorting From [1] index
+const hrs = activities.sort((a, b) => {
+    return a[1]-b[1]
+})
+
+console.log(hrs)
